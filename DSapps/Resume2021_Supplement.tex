@@ -1,0 +1,166 @@
+
+\documentclass[12pt]{article}
+
+%% Define some new colors
+\usepackage{xcolor}
+
+\usepackage{scrextend}
+
+
+%% Page and text formatting
+\usepackage[left=0.7in, right=0.7in, top=0.5in, bottom=0.5in]{geometry} % margins
+\usepackage{setspace}
+\singlespacing % No more than 6 lines of text per inch
+\usepackage{amsmath, amsfonts}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage{graphics}
+\usepackage{makecell}
+\usepackage{tabularx}
+
+
+%% Set up hyperlinks
+\usepackage[linktoc=page]{hyperref}
+\hypersetup{
+  colorlinks = true,
+  urlcolor = blue,
+  citecolor = blue,
+  linkcolor = blue,
+}
+
+%% Reduce whitespace around lists (globally)
+\usepackage{enumitem}
+\setlist[itemize]{nosep,left=0pt}
+\setlist[enumerate]{nosep}
+\setlist[description]{nosep}
+
+%% Formatting for sections
+
+\usepackage{sectsty}
+\sectionfont{\fontsize{16}{25}\selectfont}
+\subsectionfont{\fontsize{12}{25}\selectfont}
+
+
+
+\begin{document}
+
+\fontsize{9}{12}\selectfont
+
+\linespread{1.0}
+\fontfamily{ptm}\selectfont
+
+\vspace{2mm}
+
+\vspace{1mm}
+
+\noindent{\fontsize{15}{17}\selectfont Kevin Nash \\ }
+
+\noindent\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l l}
+Research Associate & Email: \href{mailto:knash@physics.rutgers.edu}{knash@physics.rutgers.edu} \\
+Rutgers University & Phone: (434) 760-1424\\
+Department of Physics \& Astronomy & Github: \textbf{\href{https://github.com/knash?tab=repositories} {{\underline{https://github.com/knash}}}} \\
+136 Frelinghuysen Rd & Gitlab: \textbf{\href{https://gitlab.cern.ch/users/knash/projects} {{\underline{https://gitlab.cern.ch/knash}}}} \\
+Piscataway, NJ 08854\\
+\hline
+\\
+\\
+\end{tabular*}
+{\fontsize{10}{17}\selectfont
+The supplemental document for resume\footnote{LINK}.  Below are published data analyses to which I have a notable contribution.
+Additionally, presentations at large public conferences and a brief guide to the given software repositories.
+}
+
+
+
+
+
+
+\section*{Publications}
+\begin{tabular}{l}
+
+\begin{tabular}{l}
+\fontsize{10}{12}\selectfont
+
+\textit{\makecell[l]{Search for a $W'$ boson decaying to a vector-like quark and a top or bottom quark in the \\ all-jets final state (Full Run 2)}}\\
+The CMS Collaboration, \textbf{CMS Physics Analysis Summary (Paper in progress)}, \href{https://inspirehep.net/literature/1851989} {\textit{\underline{B2G-20-002}}} \\ \\
+
+\textit{\makecell[l]{Identification of heavy, energetic, hadronically decaying particles using machine-learning  \\ techniques}}\\
+The CMS Collaboration, \textbf{CMS Paper}; \href{https://doi.org/10.1088%2F1748-0221%2F15%2F06%2Fp06005}{\textit{\underline{JINST 06 2020 P06005}}} \\ \\
+
+\textit{\makecell[l]{Search for a $W'$ boson decaying to a vector-like quark and a top or bottom quark in the  \\ all-jets final state}}\\
+The CMS Collaboration, \textbf{CMS Paper},  \href{https://doi.org/10.1088%2F1748-0221%2F15%2F06%2Fp06005}{\textit{\underline{JHEP 03 2019 127}}} \\ \\
+
+\textit{\makecell[l]{Search for $W' \to tb$ in the all-hadronic final state at $\sqrt{s}$ = 13 TeV}}\\
+ The CMS Collaboration, \textbf{CMS Paper},  \href{http://dx.doi.org/10.1007/JHEP08(2017)029}{\textit{\underline{JHEP 08 2017 029}}} \\ \\
+
+\textit{\makecell[l]{Search for $W' \to tb$ in proton-proton collisions at $\sqrt{s}$ = 8 TeV}} \\
+The CMS Collaboration, \textbf{CMS Paper},  \href{http://dx.doi.org/10.1007/JHEP02(2016)122}{\textit{\underline{JHEP 02 2016 122}}} \\ \\
+
+\textit{\makecell[l]{Search for the production of an excited bottom quark decaying to tW in proton-proton \\ collisions at $\sqrt{s}$ = 8 TeV}} \\
+The CMS Collaboration, \textbf{CMS Paper},  \href{http://dx.doi.org/10.1007/JHEP01(2016)166}{\textit{\underline{JHEP 01 2016 166}}} \\ \\
+
+\textit{\makecell[l]{Search for a heavy resonance decaying to a top quark and a W boson at $\sqrt{s}$ = 13 TeV \\ in the fully hadronic final state}}\\
+The CMS Collaboration, \textbf{CMS Paper (Submitted to JHEP)}, \href{https://arxiv.org/abs/2104.12853}{\textit{ Hep-Ex:2104.12853 }} \\ \\
+
+\textit{\makecell[l]{Search for Physics beyond the Standard Model in Events with Overlapping Photons and \\ Jets}} \\
+The CMS Collaboration, \textbf{CMS Paper},  \href{https://link.aps.org/doi/10.1103/PhysRevLett.123.241801}{\textit{\underline{Phys. Rev. Lett. 123 241801 2019}}} \\ \\
+
+\textit{\makecell[l]{The Phase-2 Upgrade of the CMS Tracker}} \\
+The CMS Collaboration, \textbf{CMS Technical Design Report},  \href{https://cds.cern.ch/record/2272264?ln=en}{\textit{\underline{CDS (Fig 3.23)}}} \\ \\
+
+\textit{\makecell[l]{Boosted Top Jet Tagging at CMS}} \\
+The CMS Collaboration, \textbf{CMS Physics Analysis Summary},  \href{http://cms-physics.web.cern.ch/cms-physics/public/JME-13-007-pas.pdf}{\textit{\underline{CMS-PAS-JME-13-007}}} \\ \\
+
+\textit{\makecell[l]{Search for new physics using the $t\overline{t}$ invariant mass distribution in pp collisions at  \\ $\sqrt{s}$ = 8 TeV}} \\
+The CMS Collaboration, \textbf{CMS Paper},  \href{http://dx.doi.org/10.1103/PhysRevLett.111.211804}{\textit{\underline{Phys. Rev. Lett. 111 211804 2013}}}\\ \\
+
+\end{tabular}\\
+
+\end{tabular}
+
+\section*{Presentations at Conferences}
+
+\begin{tabular}{l}
+\href{https://indico.cern.ch/event/686555/contributions/2978188/}{\textit{\underline{Search for new resonances coupling to third generation quarks at CMS}}}, \\
+\textbf{ICHEP}, Seoul, KR., July 2018 \\ \\
+\href{https://indico.cern.ch/event/666427/contributions/2881500/}{\textit{\underline{Studies of the MaPSA-light Module for the CMS Phase II Upgrade}}}, \\
+\textbf{Trento}, Munich, DE., February 2018 \\ \\
+\href{https://indico.cern.ch/event/439039/contributions/2223287/}{\textit{\underline{Search for New Massive Resonances with Boosted Top Signatures at CMS}}}, \\
+\textbf{Boost}, Zurich, CH., July 2016 \\ \\
+\href{https://indico.cern.ch/event/302395/contributions/692364/}{\textit{\underline{Boosted top quarks in physics analyses}}}, \\
+\textbf{Boost}, London, UK., August 2014 \\ \\
+\end{tabular}
+
+
+
+\section*{Code Examples}
+\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
+\textbf{\href{https://github.com/knash?tab=repositories} {\textit{\underline{https://github.com/knash}}}  } \\
+{\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
+\textbf{Maintained} (created and maintained by me) \\
+{\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
+AnomalyTools (Python, machine learning)\\
+AEAnalyzer(Python, data analysis)\\
+Educational (Python, machine learning)\\
+FirstML (Python, machine learning)\\
+NanoAODskimAna, THBtrees, MuMod\_Software, Wprime13TeV (Python, data analysis)   \\
+\end{tabularx}}
+\textbf{Contributed} (forked with relevant contributions)  \\
+{\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
+NanoHRT (Python, data analysis)\\
+cmssw (C++, full scientific framework) \\
+\\
+\end{tabularx}}
+\end{tabularx}}
+
+\textbf{\href{https://gitlab.cern.ch/users/knash/projects} {\textit{\underline{https://gitlab.cern.ch/knash}}}}  (CMS password protected)  \\
+{\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
+\textbf{Contributed} (forked with relevant contributions)  \\
+{\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
+Ph2\_ACF (C++, full scientific framework),\\
+customNano (Python, data analysis) \\
+\end{tabularx}}
+\end{tabularx}}
+\end{tabularx} \\
+
+\end{document}
