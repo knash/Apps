@@ -8,7 +8,7 @@
 
 
 %% Page and text formatting
-\usepackage[left=0.7in, right=0.7in, top=0.5in, bottom=0.5in]{geometry} % margins
+\usepackage[left=0.7in, right=0.7in, top=1.0in, bottom=0.5in]{geometry} % margins
 \usepackage{setspace}
 \singlespacing % No more than 6 lines of text per inch
 \usepackage{amsmath, amsfonts}
@@ -44,7 +44,7 @@
 
 \begin{document}
 
-\fontsize{9}{12}\selectfont
+\fontsize{10}{12}\selectfont
 
 \linespread{1.0}
 \fontfamily{ptm}\selectfont
@@ -62,6 +62,7 @@ Department of Physics \& Astronomy & Github: \textbf{\href{https://github.com/kn
 136 Frelinghuysen Rd & Gitlab: \textbf{\href{https://gitlab.cern.ch/users/knash/projects} {{\underline{https://gitlab.cern.ch/knash}}}} \\
 Piscataway, NJ 08854\\
 \hline
+
 \\
 \\
 \end{tabular*}
@@ -77,9 +78,8 @@ See supplement\footnote{Resume Supplement: \href{https://github.com/knash/Apps/b
 \begin{tabularx}{\textwidth}{p{0.9\textwidth}}
 \textbf{Johns Hopkins University, Baltimore MD:  \textit{Physics, Ph.D. 2015, M.A. 2012}} \\
 {\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
--- Performed two data searches for hypothesized rare features of the physics dataset, leading to exclusions of both features with unprecedented sensitivity  due to the development of new analysis techniques\footnote{Published (JHEP): \href{http://dx.doi.org/10.1007/JHEP02(2016)122}{\textit{\underline{JHEP 02 2016 122}}}, \href{http://dx.doi.org/10.1007/JHEP01(2016)166}{\textit{\underline{JHEP 01 2016 166}}}}.\\
--- Precision background modeling using both data simulations and extrapolation from feature-poor regions.\\
--- Uncertainty estimation of both background estimates and feature extraction methods.\\
+-- Performed searches for rare features of the dataset by deploying new pattern based discriminators\footnote{Published (JHEP): \href{http://dx.doi.org/10.1007/JHEP02(2016)122}{\textit{\underline{JHEP 02 2016 122}}}, \href{http://dx.doi.org/10.1007/JHEP01(2016)166}{\textit{\underline{JHEP 01 2016 166}}}}.\\
+-- Precision background modeling and uncertainty estimation.\\
 \end{tabularx}}
 \textbf{James Madison University, Harrisonburg VA:  \textit{Physics, B.S. 2009}}  \\
 \end{tabularx}
@@ -95,14 +95,11 @@ See supplement\footnote{Resume Supplement: \href{https://github.com/knash/Apps/b
 {\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
 %Add details
 -- Both led and contributed to multiple full data analyses, resulting in 7 results\footnote{Selected Publications: \href{https://doi.org/10.1088\%2F1748-0221\%2F15\%2F06\%2Fp06005}{\textit{\underline{JHEP 03 2019 127}}}, \href{https://doi.org/10.1088\%2F1748-0221\%2F15\%2F06\%2Fp06005} {\textit{\underline{JINST 06 2020 P06005}}},  \href{https://arxiv.org/abs/2104.12853}{\textit{\underline{HEP-EX:2104.12853}}}, \href{http://dx.doi.org/10.1007/JHEP08(2017)029}{\textit{\underline{JHEP 08 2017 029}}}} published in peer-reviewed journals.  \\
--- On the forefront of applying modern machine learning to physics analyses, yielding the $\mathrm{Image_{Top}}$ discriminator, which resulted in a factor of ten in sensitivity over conventional methods\footnote{Published (JINST): \href{https://doi.org/10.1088\%2F1748-0221\%2F15\%2F06\%2Fp06005} {\textit{\underline{JINST 06 2020 P06005}}}}.\\
+-- On the forefront of applying modern machine learning to physics analyses.  Developed the $\mathrm{Image_{Top}}$ discriminator, a CNN which uses correlated detector inputs as an analogue of pixel intensity and color.  This resulted in a factor of ten in sensitivity over conventional methods\footnote{Published (JINST): \href{https://doi.org/10.1088\%2F1748-0221\%2F15\%2F06\%2Fp06005} {\textit{\underline{JINST 06 2020 P06005}}}}.\\
 %(published, see \textbf{\href{https://doi.org/10.1088\%2F1748-0221\%2F15\%2F06\%2Fp06005} {{\underline{JINST 06 2020 P06005}}}}).  \\
--- Performed calibration and deployment of the $\mathrm{Image_{Top}}$ discriminator, allowing it to be used in data analyses and simulations.\\
+-- Deployed the $\mathrm{Image_{Top}}$ discriminator, which includes uncertainty calibration and integration into the larger software framework -- allowing it to be used in data analyses and simulations.\\
+-- Converted the $\mathrm{Image_{Top}}$ network into both GAN- and Autoencoder-based anomaly detection networks for extracting unknown features from data.\\
 -- Created generic background estimation methods based on an extrapolation from signal-poor control regions.\\
--- Created GAN- and Autoencoder-based anomaly detection networks for extracting unknown features from data.\\
--- Performed fabrication and prototyping of cutting-edge microelectronics, including the modeling statistical analysis of experimental data\footnote{Presentation Trento2021: \href{https://indico.cern.ch/event/666427/contributions/2881500/}{\textit{\underline{Studies of the MaPSA-light Module for the CMS Phase II Upgrade}}} \\
-}. \\
--- Managed analysis groups to both produce deliverables given strict deadlines and publish complete data analyses.  \\
 -- Presented at multiple major conferences. \\
 \\
 \end{tabularx}}
@@ -116,16 +113,11 @@ See supplement\footnote{Resume Supplement: \href{https://github.com/knash/Apps/b
 \textbf{\fontsize{12}{15}\selectfont Formal Managerial Duties} \\
 {\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
 %JMAR, B2G Jargon
-\textbf{Subgroup Manager: \textit{JMAR subgroup (2017\textendash 2018), B2GRES subgroup (2018\textendash 2020)}}  \\
+\textbf{Subgroup Manager:}  \\
 {\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
 -- Managed $\sim$30 doctoral students and researchers from around the world corresponding to $\sim$7 simultaneous research groups.\\
+-- Coordinated the deployment of deliverables within strict deadlines.\\
 -- Conducted peer-review of multiple projects prior to allowing mature analyses to proceed to the journal review.\\
--- Produced deliverables within a strict deadline to be used by the larger collaboration.\\
-\\
-\end{tabularx}}
-\textbf{Spokesperson: \textit{Experiment FNAL CMS Outer Tracker R\&D (2017\textendash Present)}} \\
-{\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
--- Coordinated a research team in producing large data sets for use in characterizing prototype electronics.\\
 \\
 \end{tabularx}}
 \end{tabularx}}
@@ -134,94 +126,67 @@ See supplement\footnote{Resume Supplement: \href{https://github.com/knash/Apps/b
 \section*{Hard Skills}
 \begin{tabularx}{\textwidth}{p{0.9\textwidth}}
 
-\textbf{Python}\\
+\textbf{Python - 10 years}\\
 {\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
--- Designing full analysis frameworks. \\
--- Filtering and wrangling of the large datasets and large-scale simulations. \\
--- Performing advanced statistical analysis of datasets and simulations. \\
+-- Designing full data analysis frameworks to perform feature extraction of large datasets. \\
 -- Experienced in NumPy, Pandas, Jupyter, Scipy, Scikit-learn, Anaconda, Matplotlib, multiprocessing, etc.\\
 \end{tabularx}}
 
-\textbf{C++} \\
+\textbf{C++ - 10 years} \\
 {\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
--- Contributing to large collaborative projects.\\
--- Coordinating simultaneous pull requests and well as performing code reviews.\\
+-- Contributing to large collaborative projects, coordinating simultaneous pull requests, performing code reviews, etc.\\
 \end{tabularx}}
 
-\textbf{Machine learning}\\
+\textbf{Machine learning - 5 years}\\
 {\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
--- Implementing neural network object recognition for scientific research.\\
--- Performing extensive studies of architecture design, input preprocessing steps, and hyperparameter optimization scans.\\
--- Creating prototype models and optimizing existing models.\\
--- Using Keras, TensorFlow, Torch.\\
--- Implementing CNNs, Autoencoders, MAFs, GANs, LSTMs, GCNs, MLPs, and Decision Trees.\\
+-- Implementing neural network object recognition for scientific research through both model prototyping and optimization of existing models.\\
+-- Performing studies of architecture design, input preprocessing steps, and hyperparameter optimization scans.\\
+-- Using Keras, TensorFlow, PyTorch.\\
+-- Implementing CNNs, Autoencoders, MAFs, and GANs for deployed projects.\\
+-- Experience creating custom LSTMs and GCNs.\\
+-- Designing machine learning workstations, awarded the Nvidia GPU grant for fundamental scientific research.\\
+-- Interfacing with single and multi-GPU models.  \\
 \end{tabularx}}
 
-\textbf{System Design and GPU interface}\\
+\textbf{SQL - 2 years} \\
 {\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
--- Designing machine learning workstations.\\
--- Installing/managing software distributions and interfacing with single and multi-GPU models.  Awarded the Nvidia GPU grant for fundamental scientific research.\\
+-- Using MySQL to create an automated database of sensors and corresponding calibrations.\\
 \end{tabularx}}
 
-\textbf{Parallelization and Batch Systems}\\
+
+\textbf{Code management and optimization}\\
 {\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
+ -- Using Github, Gitlab, SVN, and CVS version control software for collaboration. \\
  -- Using Condor and LSF to access large CPU clusters.\\
- -- Parallelization of data analyses for multiprocessing.\\
- \end{tabularx}}
-
-\textbf{Version Control Systems}\\
-{\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
--- Using Github, Gitlab, SVN, and CVS version control software for collaboration. \\
+ -- Efficiency optimization, such as converting to vectorized functions, preprocessing/skimming, and parallelization. \\
+ -- Sensitivity optimization, such as maximizing feature significance and minimizing systematic uncertainties.  \\
 \end{tabularx}}
+
 
 \textbf{Statistical Analysis}\\
 {\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
--- Advanced fitting of data, including histogram morphing and curve fitting using both parametric and non-parametric methods.\\
+-- Fitting of data, including histogram morphing and curve fitting using both parametric and non-parametric methods.\\
 -- Estimation of systematic uncertainties and error propagation.\\
 \end{tabularx}}
 
-\textbf{Optimization}\\
-{\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
--- Processing efficiency -- such as converting to vectorized functions, preprocessing and skimming steps, and efficient parallelization. \\
--- Sensitivity of data analyses -- such as tuning operating points to maximize feature significance, minimizing/fitting systematic uncertainties, and improving discrimination through multidimensional hyperparameter scans.  \\
-\end{tabularx}}
 
-\textbf{Hardware Prototyping and Micro Fabrication} \\
-{\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
--- Creating software to interface with FPGAs for prototyping microelectronics. \\
--- Physical assembly of microelectronics, wire-bonding, device validation, etc.  \\
-\end{tabularx}}
 \end{tabularx}
-
 \section*{Soft Skills}
 \begin{tabularx}{\textwidth}{p{0.9\textwidth}}
 \textbf{Public Speaking}\\
 {\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
 -- Periodic updates of ongoing data analyses to the larger community.  \\
--- Presenting at large public conferences around the world, generally after the publication of the corresponding data analysis.  Experience converting technical results for public consumption.  \\
+-- Presenting at large public conferences around the world, experience converting technical results for the public.  \\
 \end{tabularx}}
 
 \textbf{Managerial}\\
 {\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
 -- Four years managing data analysis groups and coordinating a publication strategy. \\
--- Organizing and running periodic data analysis group meetings with multiple disparate analyses. \\
 \end{tabularx}}
-
-\textbf{Instructional}\\
-{\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
--- Instructing (Ph.D. candidate) direct subordinates on proper coding and analysis techniques. \\
--- Instructing and assisting with formal university classes for introductory and advanced physics curriculums. \\
-\end{tabularx}}
-
-\textbf{Large Collaboration}\\
-{\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
- -- Working productively with a group of $\sim$2000 people as a member of the CMS collaboration at CERN. \\
- -- Coordination of software contributions to the (large) general software package as well as competition and orthogonality of data analyses. \\
- \end{tabularx}}
 
 \textbf{Language Editing}\\
 {\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
- -- Recognized as a Certified Language Editor for the CMS collaboration.  This certification is awarded to individuals who are trusted with the final textual review of papers submitted to the journal.  This is performed for both personal and unaffiliated research papers.\\
+ -- A Certified Language Editor in charge of the final textual review for papers submitted to the journal.\\
  \end{tabularx}}
 
 \end{tabularx}
