@@ -8,7 +8,7 @@
 
 
 %% Page and text formatting
-\usepackage[left=0.7in, right=0.7in, top=1.0in, bottom=0.5in]{geometry} % margins
+\usepackage[left=1.0in, right=1.0in, top=1.0in, bottom=0.5in]{geometry} % margins
 \usepackage{setspace}
 \singlespacing % No more than 6 lines of text per inch
 \usepackage{amsmath, amsfonts}
@@ -44,7 +44,7 @@
 
 \begin{document}
 
-\fontsize{10}{12}\selectfont
+\fontsize{11}{13}\selectfont
 
 \linespread{1.0}
 \fontfamily{ptm}\selectfont
@@ -72,122 +72,131 @@ Applied advanced analysis techniques to extract features that typically exist at
 Applied machine learning to analyses resulting in a feature extraction sensitivity of a factor of ten over the current state-of-the-art methods.
 Published multiple data analyses in peer-reviewed journals including feature exclusion, calibration of feature extraction techniques, and machine learning.
 Four years of experience managing analysis groups to produce both published results for journals, and algorithms for the larger collaboration.
-See supplement\footnote{Resume Supplement: \href{https://github.com/knash/Apps/blob/main/DSapps/Resume2021\_Supplement.pdf} {\textit{\underline{DSapps/Resume2021\_Supplement}}}} for additional info including a publication list, code examples, and presentations at conferences.
 }
+
+
+
+
+\newenvironment{newitemize0}{\renewcommand\labelitemi{}
+\begin{itemize}[
+  align=left,
+  leftmargin=1.2em,
+  itemindent=0pt,
+  labelsep=0pt,
+  labelwidth=0em
+]}
+{\end{itemize}}
+
+
+\newenvironment{newitemize1}{\renewcommand\labelitemi{}
+\begin{itemize}[
+  align=left,
+  leftmargin=1.1em,
+  itemindent=0pt,
+  labelsep=0pt,
+  labelwidth=0em
+]}
+{\end{itemize}}
+
+
+\newenvironment{newitemize2}{\renewcommand\labelitemi{--}
+\begin{itemize}[
+  align=left,
+  leftmargin=2em,
+  itemindent=0pt,
+  labelsep=0pt,
+  labelwidth=1em
+]}
+{\end{itemize}}
+
+\hyphenpenalty 10000
+\exhyphenpenalty 10000
 \section*{Education}
-\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
-\textbf{Johns Hopkins University, Baltimore MD:  \textit{Physics, Ph.D. 2015, M.A. 2012}} \\
-{\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
--- Performed searches for rare features of the dataset by deploying new pattern based discriminators\footnote{Published (JHEP): \href{http://dx.doi.org/10.1007/JHEP02(2016)122}{\textit{\underline{JHEP 02 2016 122}}}, \href{http://dx.doi.org/10.1007/JHEP01(2016)166}{\textit{\underline{JHEP 01 2016 166}}}}.\\
--- Precision background modeling and uncertainty estimation.\\
-\end{tabularx}}
-\textbf{James Madison University, Harrisonburg VA:  \textit{Physics, B.S. 2009}}  \\
-\end{tabularx}
+
+
+\textbf{\hspace*{0.2cm}Johns Hopkins University, Baltimore MD:  \textit{Physics, Ph.D. 2015, M.A. 2012}}
+\begin{newitemize2}
+\item  Performed searches for rare features of the dataset by deploying new pattern based discriminators\footnote{Published (JHEP): \href{http://dx.doi.org/10.1007/JHEP02(2016)122}{\textit{\underline{JHEP 02 2016 122}}}, \href{http://dx.doi.org/10.1007/JHEP01(2016)166}{\textit{\underline{JHEP 01 2016 166}}}}.
+\item  Precision background modeling and uncertainty estimation.\\
+\end{newitemize2}
+\textbf{\hspace*{0.2cm}James Madison University, Harrisonburg VA:  \textit{Physics, B.S. 2009}}
+
 
 \section*{Experience}
-\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
-{\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
 
-\textbf{\fontsize{12}{15}\selectfont Research Positions} \\
-{\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
-%Mention working at CERN
-\textbf{Rutgers University, Piscataway NJ: \textit{Post-doctoral Associate (2015\textendash 2020), Research Associate (2020\textendash Present)}}  \\
-{\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
-%Add details
--- Both led and contributed to multiple full data analyses, resulting in 7 results\footnote{Selected Publications: \href{https://doi.org/10.1088\%2F1748-0221\%2F15\%2F06\%2Fp06005}{\textit{\underline{JHEP 03 2019 127}}}, \href{https://doi.org/10.1088\%2F1748-0221\%2F15\%2F06\%2Fp06005} {\textit{\underline{JINST 06 2020 P06005}}},  \href{https://arxiv.org/abs/2104.12853}{\textit{\underline{HEP-EX:2104.12853}}}, \href{http://dx.doi.org/10.1007/JHEP08(2017)029}{\textit{\underline{JHEP 08 2017 029}}}} published in peer-reviewed journals.  \\
--- On the forefront of applying modern machine learning to physics analyses.  Developed the $\mathrm{Image_{Top}}$ discriminator, a CNN which uses correlated detector inputs as an analogue of pixel intensity and color.  This resulted in a factor of ten in sensitivity over conventional methods\footnote{Published (JINST): \href{https://doi.org/10.1088\%2F1748-0221\%2F15\%2F06\%2Fp06005} {\textit{\underline{JINST 06 2020 P06005}}}}.\\
-%(published, see \textbf{\href{https://doi.org/10.1088\%2F1748-0221\%2F15\%2F06\%2Fp06005} {{\underline{JINST 06 2020 P06005}}}}).  \\
--- Deployed the $\mathrm{Image_{Top}}$ discriminator, which includes uncertainty calibration and integration into the larger software framework -- allowing it to be used in data analyses and simulations.\\
--- Converted the $\mathrm{Image_{Top}}$ network into both GAN- and Autoencoder-based anomaly detection networks for extracting unknown features from data.\\
--- Created generic background estimation methods based on an extrapolation from signal-poor control regions.\\
--- Presented at multiple major conferences. \\
-\\
-\end{tabularx}}
-\end{tabularx}}
-\end{tabularx}}
+\textbf{\hspace*{0.2cm}Rutgers University, Piscataway NJ: \textit{Post-doctoral Associate, Research Associate (2015\textendash Present)}}
+\begin{newitemize2}
+  \item Both led and contributed to multiple full data analyses, resulting in 7 results\footnote{Selected Publications: \href{https://doi.org/10.1088\%2F1748-0221\%2F15\%2F06\%2Fp06005}{\textit{\underline{JHEP 03 2019 127}}}, \href{https://doi.org/10.1088\%2F1748-0221\%2F15\%2F06\%2Fp06005} {\textit{\underline{JINST 06 2020 P06005}}},  \href{https://arxiv.org/abs/2104.12853}{\textit{\underline{HEP-EX:2104.12853}}}, \href{http://dx.doi.org/10.1007/JHEP08(2017)029}{\textit{\underline{JHEP 08 2017 029}}}} published in peer-reviewed journals.
+  \item On the forefront of applying modern machine learning to physics analyses.  Developed the $\mathrm{Image_{Top}}$ discriminator, a CNN which uses correlated detector inputs as an analogue of pixel intensity and color.  This resulted in a factor of ten in sensitivity over conventional methods\footnote{Published (JINST): \href{https://doi.org/10.1088\%2F1748-0221\%2F15\%2F06\%2Fp06005} {\textit{\underline{JINST 06 2020 P06005}}}}.
+  %(published, see \textbf{\href{https://doi.org/10.1088\%2F1748-0221\%2F15\%2F06\%2Fp06005} {{\underline{JINST 06 2020 P06005}}}}).
+  \item Deployed the $\mathrm{Image_{Top}}$ discriminator, which includes uncertainty calibration and integration into the larger software framework -- allowing it to be used in data analyses and simulations.
+  \item Converted the $\mathrm{Image_{Top}}$ network into both GAN- and Autoencoder-based anomaly detection networks for extracting unknown features from data.
+  \item Created generic background estimation methods based on an extrapolation from signal-poor control regions.
+  \item Presented at multiple major conferences.\\
+\end{newitemize2}
+\textbf{\hspace*{0.2cm}Subgroup Manager (2017–2021)}
+\begin{newitemize2}
+\item Managed $\sim$30 doctoral students and researchers corresponding to $\sim$7 simultaneous research groups.
+\item Coordinated the deployment of deliverables within strict deadlines.
+\item Conducted peer-review of multiple projects prior to allowing mature analyses to proceed to the journal review.
+\end{newitemize2}
 
 
 
 
-
-\textbf{\fontsize{12}{15}\selectfont Formal Managerial Duties} \\
-{\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
-%JMAR, B2G Jargon
-\textbf{Subgroup Manager:}  \\
-{\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
--- Managed $\sim$30 doctoral students and researchers from around the world corresponding to $\sim$7 simultaneous research groups.\\
--- Coordinated the deployment of deliverables within strict deadlines.\\
--- Conducted peer-review of multiple projects prior to allowing mature analyses to proceed to the journal review.\\
-\\
-\end{tabularx}}
-\end{tabularx}}
-\end{tabularx}
 
 \section*{Hard Skills}
-\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
 
-\textbf{Python - 10 years}\\
-{\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
--- Designing full data analysis frameworks to perform feature extraction of large datasets. \\
--- Experienced in NumPy, Pandas, Jupyter, Scipy, Scikit-learn, Anaconda, Matplotlib, multiprocessing, etc.\\
-\end{tabularx}}
+\textbf{\hspace*{0.2cm}Python - 10 years}
+\begin{newitemize2}
+\item Designing full data analysis frameworks to perform feature extraction of large datasets.
+\item Experienced in NumPy, Pandas, Jupyter, Scipy, Scikit-learn, Anaconda, Matplotlib, multiprocessing, etc.\\
+\end{newitemize2}
+\textbf{\hspace*{0.2cm}C++ - 10 years}
+\begin{newitemize2}
+\item Contributing to large collaborative analysis pipelines.\\
+\end{newitemize2}
+\textbf{\hspace*{0.2cm}Machine learning - 5 years}
 
-\textbf{C++ - 10 years} \\
-{\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
--- Contributing to large collaborative projects, coordinating simultaneous pull requests, performing code reviews, etc.\\
-\end{tabularx}}
+\begin{newitemize2}
+\item Implementing neural network object recognition for scientific research.
+\item Both prototyping new models and optimizing existing models.
+\item Performing studies of architecture design, input preprocessing steps, and hyperparameter optimization scans.
+\item Using Keras, TensorFlow, PyTorch.
+\item Implementing CNNs, Autoencoders, MAFs, and GANs for deployed projects.
+\item Experience creating custom LSTMs and GCNs.
+\item Designing machine learning workstations, awarded the Nvidia GPU grant for fundamental scientific research.
+\item Interfacing with single and multi-GPU models.\\
+\end{newitemize2}
+\textbf{\hspace*{0.2cm}SQL - 2 years}
+\begin{newitemize2}
+\item Using MySQL to create an automated database of sensors and corresponding calibrations.\\
+\end{newitemize2}
+\textbf{\hspace*{0.2cm}Code management and optimization}
+\begin{newitemize2}
+ \item Using Github, Gitlab, SVN, and CVS version control software for collaboration.
+ \item Using Condor and LSF to access large CPU clusters.
+ \item Efficiency optimization, such as converting to vectorized functions, preprocessing/skimming, and parallelization.
+ \item Sensitivity optimization, such as maximizing feature significance and minimizing systematic uncertainties.\\
+\end{newitemize2}
+\textbf{\hspace*{0.2cm}Statistical Analysis}
+\begin{newitemize2}
+\item Fitting of data, including histogram morphing and curve fitting using both parametric and non-parametric methods.
+\item Estimation of systematic uncertainties and error propagation.\\
+\end{newitemize2}
 
-\textbf{Machine learning - 5 years}\\
-{\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
--- Implementing neural network object recognition for scientific research through both model prototyping and optimization of existing models.\\
--- Performing studies of architecture design, input preprocessing steps, and hyperparameter optimization scans.\\
--- Using Keras, TensorFlow, PyTorch.\\
--- Implementing CNNs, Autoencoders, MAFs, and GANs for deployed projects.\\
--- Experience creating custom LSTMs and GCNs.\\
--- Designing machine learning workstations, awarded the Nvidia GPU grant for fundamental scientific research.\\
--- Interfacing with single and multi-GPU models.  \\
-\end{tabularx}}
-
-\textbf{SQL - 2 years} \\
-{\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
--- Using MySQL to create an automated database of sensors and corresponding calibrations.\\
-\end{tabularx}}
-
-
-\textbf{Code management and optimization}\\
-{\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
- -- Using Github, Gitlab, SVN, and CVS version control software for collaboration. \\
- -- Using Condor and LSF to access large CPU clusters.\\
- -- Efficiency optimization, such as converting to vectorized functions, preprocessing/skimming, and parallelization. \\
- -- Sensitivity optimization, such as maximizing feature significance and minimizing systematic uncertainties.  \\
-\end{tabularx}}
-
-
-\textbf{Statistical Analysis}\\
-{\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
--- Fitting of data, including histogram morphing and curve fitting using both parametric and non-parametric methods.\\
--- Estimation of systematic uncertainties and error propagation.\\
-\end{tabularx}}
-
-
-\end{tabularx}
 \section*{Soft Skills}
-\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
-\textbf{Public Speaking}\\
-{\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
--- Periodic updates of ongoing data analyses to the larger community.  \\
--- Presenting at large public conferences around the world, experience converting technical results for the public.  \\
-\end{tabularx}}
-
-\textbf{Managerial}\\
-{\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
--- Four years managing data analysis groups and coordinating a publication strategy. \\
-\end{tabularx}}
-
-\textbf{Language Editing}\\
-{\begin{tabularx}{\textwidth}{p{0.9\textwidth}}
- -- A Certified Language Editor in charge of the final textual review for papers submitted to the journal.\\
- \end{tabularx}}
-
-\end{tabularx}
+\textbf{\hspace*{0.2cm}Public Speaking}
+\begin{newitemize2}
+\item Periodic updates of ongoing data analyses to the larger community.
+\item Presenting at large public conferences around the world, experience converting technical results for the public.\\
+\end{newitemize2}
+\textbf{\hspace*{0.2cm}Managerial}
+\begin{newitemize2}
+\item Four years managing data analysis groups and coordinating a publication strategy.\\
+\end{newitemize2}
+\textbf{\hspace*{0.2cm}Language Editing}
+\begin{newitemize2}
+ \item A Certified Language Editor in charge of the final textual review for papers submitted to the journal.\\
+\end{newitemize2}
 \end{document}
