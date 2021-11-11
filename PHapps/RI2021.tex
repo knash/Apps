@@ -48,7 +48,6 @@
 
 
 
-
 \begin{document}
 
 \fontsize{10}{12}\selectfont
@@ -106,14 +105,14 @@ by analytical variable selections.  First, I will discuss my historical contribu
 merged jet tagging, then my work in porting convolutional neural network
 (CNN) image recognition to jet tagging and the rich
 physics analysis program that these methods make possible, and finally my role in
-the outer tracker hardware program in preparation of the HL-LHC upgrade.
+the outer tracker hardware program in preparation for the HL-LHC upgrade.
 
 My introduction to LHC physics research was the application of the first tagging techniques
 for merged top jets.  I applied the methods that were pioneered in the $\mathrm{Z' \to t\overline{t}}$
 all hadronic
 search \cite{Chatrchyan:2013lca}, to the $\mathrm{W' \to t\overline{b}}$ search
 \cite{Khachatryan:2015edz} (see also the run 2 reboot in Ref.~\cite{Sirunyan:2017ukk}).
-I was the first to use the N-subjettiness and subjet b-tagging algoritms for top-jet identification, which
+I was the first to use the N-subjettiness and subjet b-tagging algorithms for top-jet identification, which
 proved to be much more effective in reducing the
 QCD-multijet background than the methods used previously.
 I extracted the scale factor for this new top tagger by studying a highly
@@ -137,12 +136,11 @@ which takes advantage of the kinematic decorrelation of the $\mathrm{imageX_{MD}
 to commission the $\mathrm{imageTop_{MD}}$ tagger and analysis factory, I rebooted
 the $\mathrm{W' \to qQ \to tHb}$ search using now the full CMS run 2 data. This analysis
 is now post-approval, and the next steps will involve multiple extensions of the tagger and
-analysis methods.  We are investigating the sensitivity of the ImageMD network when applied to several
+analysis methods.  We are investigating the sensitivity of the $\mathrm{image_{MD}}$ network when applied to several
 exotic jet signatures.  In the case of a boosted resonance decaying to two bosons (For example a WED-motivated light radion),
 we expect a merged diboson jet (for example $\mathrm{WW \to qqqq}$ or $\mathrm{Z\gamma \to qq\gamma}$ within a single jet).
 In the WW case, we expect a dedicated neural network training to give a substantial improvement in
-such a feature-dense jet, and in the $\mathrm{Z\gamma}$ case, we expect the photon and neutral pf
-candidate colors to improve signal efficiency in the case of a non-isolated
+such a feature-dense jet, and in the $\mathrm{Z\gamma}$ case, we expect the photon and neutral colors to improve signal efficiency in the case of a non-isolated
 photon.  Additionally, there is room to expand the aforementioned
 $\mathrm{W' \to qQ \to tHb}$ search in interesting ways.  The same final state here is
 reproduced by the $\mathrm{W' \to HH^{\pm} \to tHb}$ signature \cite{Dobrescu:2015yba}.
@@ -162,19 +160,18 @@ is usually no acceptable SM analogue, and a machine-learned tagger necessitates 
 high level of confidence, given the lack of physical intuition of the learned features.
 Therefore, I am investigating methods of validation through event superposition
 which can be used to create BSM jet analogues in CMS data.  Although the network is
-very sensitive in the current form, we are additionally looking toward future improvements.
-Potentially $\mathrm{image_{MD}}$ network can be improved by expanding the pf candidate inputs to
-instead include lower-level detector subsystems, and by converting the pixelized inputs
-to particle-based inputs (a GCNN for example).  With my technical experience from implementing the
-$\mathrm{image_{MD}}$ network, and leadership experience from my
-B2G:RES and JMAR subgroup convenerships, position to play a leading role in the
+very sensitive in its current form, there are potential future improvements.
+The $\mathrm{image_{MD}}$ network could be improved by expanding the inputs to
+include lower-level detector subsystems, and by converting to a particle-based GCN model instead of using pixelization.  With my technical experience from implementing the
+$\mathrm{image_{MD}}$ network and leadership experience from my
+B2G:RES and JMAR subgroup convenerships, I am in a prime position to play a leading role in the
 field of hadronic searches, which will carry into the HL-LHC era.
 
 Although these dedicated methods are
 extremely powerful, the network can also be used in a generic way.
-We are currently investigating the application of the network as an unsupervised
-anomaly detector through the porting of the architecture to an autoencoder.
-With this network, an anomaly would show up as a poorly reconstructed jet image.
+We are currently investigating the possibility of converting the network to an unsupervised
+anomaly detector.  This can be accomplished by porting the architecture to an autoencoder or GAN.
+With this type of network, an anomaly would show up as a poorly reconstructed jet image.
 Additionally, the anomaly detection performance is bolstered by a careful determination of the latent space pdf by using autoregressive flows.
 The anomaly is then detected as an unlikely latent space configuration.
 
@@ -217,8 +214,8 @@ Currently, I am finalizing the software for the half PS-module at Fermilab,
 the latest evolution of the OT hardware.
 My work characterizing
 the very first prototype MPA modules has been an exciting introduction to HL-LHC
-upgrade hardware and the experience that I have gained will prove valuable in
-establishing further hardware contributions.
+upgrade hardware and the experience that I have gained will prove essential to
+future hardware contributions during my time at replace_jobname.
 \normalem
 
 \begin{flushleft}
